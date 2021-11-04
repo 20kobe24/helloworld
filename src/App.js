@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import HelloWorld from './components/HalloWorld';
 import './App.css';
-
+import Button from './components/Button';
+import List from './components/List';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <header class="header">
+          <Button />
+          <HelloWorld />
+          <List />
+        </header>
+      </div>
+      <div>
+        <footer class="page-footer font-small blue">
+          <div class="footer-copyright text-center py-3">
+            © 2021 Copyrightfrom the best of the bestestsest<a> </a>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 }
-
 export default App;
